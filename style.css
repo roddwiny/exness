@@ -208,8 +208,33 @@ text-align: center;
  }
  .table th{
   text-align: left;
+  /* border-bottom: 1px solid; */
+  /* width: 100%; */
  }
+ 
 .tt{
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tt img{
+  width: 30px;
+  height: 30px;
+}
+td{
+  border-top: 1px solid;
+  padding: 1rem 0 1rem 0;
+}
+.dt{
+  display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+.dt img{
+  width: 30px;
+  height: 30px;
+}
+.table :nth-child(6){
+  border-bottom: 1px solid;
 }
 /* end of .trade-assets */
