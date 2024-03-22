@@ -237,4 +237,30 @@ gap: 0.5rem;
 .table :nth-child(6){
   border-bottom: 1px solid;
 }
+.login-button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 4rem 8rem 4rem;
+  /* margin: 4rem; */
+}
+
+.lg>p>a{
+  border: 1px solid #FFDE02;
+  background-color: #FFDE02;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.tf>p>a{
+  border: 1px solid #172133;
+  background-color: #172133;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.login-button .lg>p>a{
+  color: white;
+}
+.login-button .tf>p>a{
+  color: white;
+}
 /* end of .trade-assets */
