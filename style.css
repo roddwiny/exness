@@ -21,7 +21,7 @@ header {
 }
 header > p {
   text-align: center;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   height: 10vh;
   color: white;
@@ -68,6 +68,14 @@ header > p a {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+.fx {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 3rem;
+  z-index: 999;
 }
 .button a {
   color: black;
@@ -293,6 +301,7 @@ td {
 
 /* first grid container */
 .seize-container {
+  position: relative;
   width: 100%;
   display: grid;
   grid-gap: 2.5rem;
@@ -574,6 +583,7 @@ td {
   color: rgb(12, 6, 6);
   translate: 150%;
   transition: translate 0.5s;
+  padding: 2rem;
 }
 /* end of risk-container */
 
@@ -633,11 +643,11 @@ td {
     margin-top: 5rem;
     /* display: block; */
   }
-  .app{
+  .app {
     display: flex;
     flex-wrap: wrap;
   }
-  .ft{
+  .ft {
     display: none;
   }
 }
@@ -650,6 +660,11 @@ td {
 }
 
 @media (max-width: 1262px) {
+  .t-table {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    flex-wrap: wrap;
+  }
   .rb {
     display: flex;
     flex-wrap: wrap;
@@ -667,6 +682,11 @@ td {
   .group1 {
     display: flex;
     font-size: 25px;
+  }
+  .t-table {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    flex-wrap: wrap;
   }
   .group {
     display: flex;
@@ -782,8 +802,8 @@ td {
 }
 .t-table {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
   gap: 2rem;
 }
 .app {
@@ -831,6 +851,11 @@ td {
   .time {
     display: block;
   }
+  .t-table {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    flex-wrap: wrap;
+  }
   .trade {
     margin-top: -6rem;
   }
@@ -858,146 +883,183 @@ td {
   .table tr td:nth-child(2) {
     display: none;
   }
-  .seize-container{
+  .seize-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .icon1{
+  .icon1 {
     text-align: center;
     margin-top: -2rem;
   }
-  .seize-text h2{
+  .seize-text h2 {
     text-align: center;
   }
-  .t{
+  .t {
     text-align: center;
   }
-  .icon2{
+  .icon2 {
     text-align: center;
     margin-top: 3rem;
   }
   .security-text h2 {
     text-align: center;
   }
-  .t1{
+  .t1 {
     text-align: center;
   }
 }
 /* end of responsiveness @767px */
-  @media (max-width: 611px) {
-    .rb2{
-      margin-left: -1rem;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .risk-container{
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .trillion-box{
-      display: none;
-      flex-wrap: wrap;
-    }
-    .footer{
-      display: grid;
-      flex-wrap: wrap;
-
-    }
+@media (max-width: 611px) {
+  .rb2 {
+    margin-left: -1rem;
+    display: flex;
+    flex-wrap: wrap;
   }
-  @media (max-width: 467px) {
-    .rbb3{
+  .risk-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .trillion-box {
+    display: none;
+    flex-wrap: wrap;
+  }
+  .footer {
+    display: grid;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 467px) {
+  .rbb3 {
     margin-top: 2rem;
-    }
   }
+}
 
-  /* responsiveness @430 */
-  @media (max-width: 467px){
-    .button2{
-      display: block;
-      text-align: center;
-    }
-    .try{
-      margin-top: 2rem;
-    }
-    .group1{
-      display: block;
-    }
-    .withdraw{
-      display: block;
-    }
-    .time-image{
-      padding: 4rem;
-    }
-    .time-image img{
-      width: 50vw;
-    }
-    .trade-container h1{
-      font-size: 20px;
-    }
-    .trade-assets h2{
-      font-size: 20px;
-    }
-    .trade-assets p{
-      font-size: 14px;
-    }
-    .tt img{
-      display: none;
-    }
-    .tt p{
-      display: none;
-    }
-    .dt img{
-      display: none;
-    }
-    .aap p{
-      display: none;
-    }
-    .login-button{
-      display: block;
-      text-align: center;
-    }
-    .login-button .tf{
-      margin-top: 3rem;
-    }
-    .seize-text h2{
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .seize-text .t{
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .security-text h2{
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .security-text .t1{
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .confidence h2{
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .confidence p{
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .stay h2{
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .st{
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .rb2{
-      text-align: center;
-    }
-    .footer{
-      margin-top: 15rem;
-    }
+/* responsiveness @430 */
+@media (max-width: 467px) {
+  .confidence {
+    padding: 0 4rem 0 4rem;
   }
-  
-  /* end of responsiveness @430 */
+  .t-table {
+    display: grid;
+    grid-template-columns: repeat(1, 8fr);
+    flex-wrap: wrap;
+  }
+  .stay {
+    padding: 0 4rem 0 4rem;
+  }
+  .button2 {
+    display: block;
+    text-align: center;
+  }
+  .try {
+    margin-top: 2rem;
+  }
+  .group1 {
+    display: block;
+  }
+  .withdraw {
+    display: block;
+  }
+  .time-image {
+    padding: 4rem;
+  }
+  .time-image img {
+    width: 50vw;
+  }
+  .trade-container h1 {
+    font-size: 20px;
+  }
+  .trade-assets h2 {
+    font-size: 20px;
+  }
+  .trade-assets p {
+    font-size: 14px;
+  }
+  .tt img {
+    display: none;
+  }
+  .tt p {
+    display: none;
+  }
+  .dt img {
+    display: none;
+  }
+  .aap p {
+    display: none;
+  }
+  .login-button {
+    display: block;
+    text-align: center;
+  }
+  .login-button .tf {
+    margin-top: 3rem;
+  }
+  .seize-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .seize-text .t {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .security-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .security-text .t1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .confidence h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .confidence p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .stay h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .st {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .rb2 {
+    text-align: center;
+  }
+  .footer {
+    margin-top: 15rem;
+  }
+}
+body {
+  position: relative;
+}
+.tryy {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+.tryy1 > a {
+  color: #f3f5f7;
+}
+.tryy2 > a {
+  color: black;
+}
+.tryy1 {
+  border: 1px solid #172133;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #172133;
+}
+.tryy2 {
+  border: 1px solid #ffde02;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #ffde02;
+}
+
+/* end of responsiveness @430 */
